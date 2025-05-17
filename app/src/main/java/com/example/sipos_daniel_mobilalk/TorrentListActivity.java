@@ -186,7 +186,7 @@ public class TorrentListActivity extends AppCompatActivity {
                 .setContentTitle(title)
                 .setContentText(text)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-        notificationManager.notify(NOTIFICATION_ID, builder.build());
+        //notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
 
     // AlarmManager példa
