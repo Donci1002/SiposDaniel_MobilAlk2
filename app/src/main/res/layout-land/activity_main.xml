@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Torrent Alkalmazás"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/actionButtons"
+        app:layout_constraintWidth_percent="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:boxStrokeColor="@color/accent"
+                app:hintTextColor="@color/accent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/ETfelh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nev"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxStrokeColor="@color/accent"
+                app:hintTextColor="@color/accent"
+                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <EditText
+                    android:id="@+id/ETjelszo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/jelszo_log"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/BTbejel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/bejelentkezes"
+                android:onClick="bejelentkezes"
+                android:backgroundTint="@color/primary"
+                android:textColor="@android:color/white"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toEndOf="@id/loginCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5">
+
+        <Button
+            android:id="@+id/BTbejelregisz"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/regisztraci"
+            android:onClick="reg"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@android:color/white"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egyéb bejelentkezési lehetőségek"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/secondary_text" />
+
+        <Button
+            android:id="@+id/BTvendeg"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/bejelentkezes_vendegkent"
+            android:onClick="bejelentkezesVendegkent"
+            android:backgroundTint="@color/light_primary"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp"
+            app:cornerRadius="8dp" />
+
+        <Button
+            android:id="@+id/BTgoogle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/bejelentkezes_google_fiokka"
+            android:onClick="bejelentkezesGoogleal"
+            android:backgroundTint="@android:color/white"
+            android:textColor="#DB4437"
+            android:drawableStart="@drawable/torr"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            app:cornerRadius="8dp"
+            app:strokeColor="#DB4437"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

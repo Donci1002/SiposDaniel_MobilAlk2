@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Applikacio</string>
+    <string name="nev">Név</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="jelszo_log">Jelszó</string>
+    <string name="bejelentkezes">Bejelentkezés</string>
+    <string name="regisztraci">Regisztráció</string>
+    <string name="regisztracio">Regisztáció</string>
+    <string name="felhasznalonev">Felhasznalonév</string>
+    <string name="email_cim">E-mail cím</string>
+    <string name="jelszoujra">Jelszó újra</string>
+    <string name="megse">Mégse</string>
+    <string name="telefonszam">Telefonszám</string>
+    <string name="torrent">Torrent</string>
+    <string name="bejelentkezes_vendegkent">Bejelentkezés vendégként</string>
+    <string name="bejelentkezes_google_fiokka">Bejelentkezés Google Fiókka</string>
+    <string-array name="telefonok">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
+</resources>

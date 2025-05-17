@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390428837154",
+    "project_id": "siposdanielmobilalk",
+    "storage_bucket": "siposdanielmobilalk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390428837154:android:5b61c3baa32a18a900d17b",
+        "android_client_info": {
+          "package_name": "com.example.sipos_daniel_mobilalk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0syylCXL3D7qcSdq6ui7t7YGOuTUpQ0A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
